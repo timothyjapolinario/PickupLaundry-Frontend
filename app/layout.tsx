@@ -10,7 +10,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="h-screen bg-[#00c4bb] px-[0.5rem] py-2 md:px-[5vw] overflow-x-hidden flex flex-col">
+        <div className="md:bg-none">
+          <Header />
+        </div>
+        <div className="w-full p-2 lg:p-10 bg-[#d9fff9] rounded- lg flex flex-col gap-10 h-full rounded-md  ">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
