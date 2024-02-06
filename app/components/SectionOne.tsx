@@ -8,7 +8,7 @@ const SectionOne = () => {
         <div>
           <div className="flex justify-center lg:items-center lg:justify-start w-full ">
             <div className="relative w-fit ">
-              <p className="text-[3rem] font-bold ">Manila's </p>
+              <p className="text-[3rem] font-bold ">Manila </p>
               <img
                 src={"/icons/bubble-icon.png"}
                 className="absolute top-[-10px] right-[-30%]"
