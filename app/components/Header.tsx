@@ -17,14 +17,6 @@ const Header = () => {
           </span>
         </h1>
       </div>
-      <div className="lg:flex gap-6 hidden font-semibold">
-        <button>Home</button>
-        <button>About</button>
-        <button>Service</button>
-        <button>Career</button>
-        <button>Find Location</button>
-        <button>My Account</button>
-      </div>
       <div>
         {/* <button className="flex px-4 py-2 rounded-md bg-[#6c9a98] text-white items-center gap-2">
           <Image

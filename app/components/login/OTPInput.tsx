@@ -1,5 +1,5 @@
 "use client";
-import { validateOtp } from "@/app/services/userService";
+import { validateOtp } from "@/services/userService";
 import { useRouter } from "next/navigation";
 
 import { useEffect, useState } from "react";

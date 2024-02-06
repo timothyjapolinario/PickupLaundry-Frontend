@@ -4,12 +4,14 @@ type Props = {
   serviceName: string;
   serviceIconDefault: string;
   serviceIconOnHover?: string;
+  onHover?: (serviceName: string) => void;
 };
 
 const Service = ({
   serviceName,
   serviceIconDefault,
   serviceIconOnHover,
+  onHover,
 }: Props) => {
   const [activeIcon, setActiveIcon] = useState(serviceIconDefault);
   return (
@@ -19,6 +21,17 @@ const Service = ({
         onMouseEnter={() => {
           if (serviceIconOnHover) {
             setActiveIcon(serviceIconOnHover);
+          }
+          if (onHover) {
+            onHover(serviceName);
+          }
+        }}
+        onClick={() => {
+          if (serviceIconOnHover) {
+            setActiveIcon(serviceIconOnHover);
+          }
+          if (onHover) {
+            onHover(serviceName);
           }
         }}
         onMouseLeave={() => {

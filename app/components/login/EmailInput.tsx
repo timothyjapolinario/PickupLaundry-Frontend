@@ -1,5 +1,5 @@
 "use client";
-import { sendOtp } from "@/app/services/userService";
+import { sendOtp } from "@/services/userService";
 import { useEffect, useState } from "react";
 
 type Prop = {
